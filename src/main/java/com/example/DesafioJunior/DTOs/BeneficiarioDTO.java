@@ -1,7 +1,5 @@
 package com.example.DesafioJunior.DTOs;
 
-import com.example.DesafioJunior.entidades.Beneficiario;
-
 import java.time.LocalDate;
 
 import java.time.LocalDateTime;
