@@ -59,7 +59,7 @@ public class BeneficiarioService {
                 salvo.getDataInclusao(),
                 salvo.getDataAtualizacao(),
                 salvo.getDocumentos().stream()
-                        .map(doc -> new DocumentosDTO(doc.getTipoDocumento(), doc.getNumero())) // Verifique se é 'getNumero' ou 'getDescricao'
+                        .map(doc -> new DocumentosDTO(doc.getTipoDocumento(), doc.getNumero()))
                         .toList());
     }
 

@@ -24,7 +24,7 @@ public class BeneficiarioController {
     @Operation(summary = "Cria um novo beneficiário e seus documentos")
     @PostMapping
     public ResponseEntity<BeneficiarioDTO> criar(@RequestBody BeneficiarioRequest request) {
-        BeneficiarioDTO salvo = beneficiarioService.adicionar(request.beneficiario(), request.documentos());  //erro aqui
+        BeneficiarioDTO salvo = beneficiarioService.adicionar(request.beneficiario(), request.documentos());  
         return ResponseEntity.status(HttpStatus.CREATED).body(salvo);
 
 
