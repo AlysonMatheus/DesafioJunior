@@ -3,7 +3,7 @@
 Esta é uma API REST completa desenvolvida para o gerenciamento de beneficiários e seus respectivos documentos, focada em boas práticas de desenvolvimento Java e Spring Boot.
 
 ## 🚀 Tecnologias Utilizadas
-- **Java 17** (Linguagem principal)
+- **Java 21** (Linguagem principal)
 - **Spring Boot 3** (Framework)
 - **Spring Data JPA** (Persistência de dados)
 - **H2 Database** (Banco de dados em memória para testes rápidos)
