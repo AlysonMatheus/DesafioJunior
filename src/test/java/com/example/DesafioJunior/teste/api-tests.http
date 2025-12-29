@@ -1,0 +1,60 @@
+### Configuração de Variáveis
+@host = http://localhost:8081
+@url = {{host}}/beneficiarios
+
+### 1. Criar um novo Beneficiário (POST)
+# Este teste valida a criação, as datas de auditoria e o documento inicial.
+POST {{url}}
+Content-Type: application/json
+
+{
+  "beneficiario": {
+    "nome": "Alyson Matheus",
+    "telefone": "11999998888",
+    "dataNascimento": "1995-05-20"
+  },
+  "documentos": {
+    "tipoDocumento": "RG",
+    "numero": "12.345.678-9"
+  }
+}
+
+###
+
+### 2. Listar todos os Beneficiários (GET)
+# Verifica se o beneficiário criado acima aparece na lista e se não há duplicatas.
+GET {{url}}
+Accept: application/json
+
+###
+
+### 3. Buscar documentos de um beneficiário específico (GET)
+# Substitua o '1' pelo ID que foi gerado no passo 1.
+GET {{url}}/1/documentos
+Accept: application/json
+
+###
+
+### 4. Atualizar dados do Beneficiário (PUT)
+# Testa se a 'dataAtualizacao' muda e se o nome é alterado com sucesso.
+PUT {{url}}/1
+Content-Type: application/json
+
+{
+  "beneficiario": {
+    "nome": "Alyson Matheus Alterado",
+    "telefone": "11900001111"
+  }
+}
+
+###
+
+### 5. Remover um Beneficiário (DELETE)
+# Se você já implementou o método de exclusão, este comando removerá o registro.
+DELETE {{url}}/1
+
+###
+
+### 6. Testar Erro 404 (Busca ID inexistente)
+# Útil para validar se seu tratamento de erro (RuntimeException) está funcionando.
+GET {{url}}/999
