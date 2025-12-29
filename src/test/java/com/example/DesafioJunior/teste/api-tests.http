@@ -30,14 +30,14 @@ Accept: application/json
 
 ### 3. Buscar documentos de um beneficiário específico (GET)
 # Substitua o '1' pelo ID que foi gerado no passo 1.
-GET {{url}}/1/documentos
+GET {{url}}/3/documentos
 Accept: application/json
 
 ###
 
 ### 4. Atualizar dados do Beneficiário (PUT)
 # Testa se a 'dataAtualizacao' muda e se o nome é alterado com sucesso.
-PUT {{url}}/1
+PUT {{url}}/3
 Content-Type: application/json
 
 {
@@ -51,7 +51,7 @@ Content-Type: application/json
 
 ### 5. Remover um Beneficiário (DELETE)
 # Se você já implementou o método de exclusão, este comando removerá o registro.
-DELETE {{url}}/1
+DELETE {{url}}/3
 
 ###
 

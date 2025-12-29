@@ -1,4 +1,4 @@
-package com.example.DesafioJunior.entidades;
+package com.example.DesafioJunior.entity;
 
 import jakarta.persistence.*;
 
