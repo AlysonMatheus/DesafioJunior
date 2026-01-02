@@ -7,7 +7,6 @@ import com.example.DesafioJunior.DTOs.DocumentosDTO;
 import com.example.DesafioJunior.entity.Beneficiario;
 import com.example.DesafioJunior.entity.Documentos;
 import com.example.DesafioJunior.repository.BeneficiarioRepository;
-import com.example.DesafioJunior.repository.DocumentoRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,12 +21,12 @@ public class BeneficiarioService {
 
     private final BeneficiarioRepository beneficiarioRepository;
 
-    private final DocumentoRepository documentoRepository;
+
 
     @Autowired
-    public BeneficiarioService(BeneficiarioRepository beneficiarioRepository, DocumentoRepository documentoRepository) {
+    public BeneficiarioService(BeneficiarioRepository beneficiarioRepository) {
         this.beneficiarioRepository = beneficiarioRepository;
-        this.documentoRepository = documentoRepository;
+       ;
     }
 
     @Transactional
