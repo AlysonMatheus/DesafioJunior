@@ -1,4 +1,4 @@
-package com.example.DesafioJunior.DTOs;
+package com.example.DesafioJunior.dtos;
 
 import java.time.LocalDate;
 

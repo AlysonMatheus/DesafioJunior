@@ -1,9 +1,9 @@
 package com.example.DesafioJunior.services;
 
 
-import com.example.DesafioJunior.DTOs.BeneficiarioDTO;
-import com.example.DesafioJunior.DTOs.BeneficiarioRequest;
-import com.example.DesafioJunior.DTOs.DocumentosDTO;
+import com.example.DesafioJunior.dtos.BeneficiarioDTO;
+import com.example.DesafioJunior.dtos.BeneficiarioRequest;
+import com.example.DesafioJunior.dtos.DocumentosDTO;
 import com.example.DesafioJunior.entity.Beneficiario;
 import com.example.DesafioJunior.entity.Documentos;
 import com.example.DesafioJunior.repository.BeneficiarioRepository;

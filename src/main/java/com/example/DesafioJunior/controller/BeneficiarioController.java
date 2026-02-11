@@ -1,9 +1,9 @@
 package com.example.DesafioJunior.controller;
 
-import com.example.DesafioJunior.DTOs.BeneficiarioDTO;
-import com.example.DesafioJunior.DTOs.BeneficiarioRequest;
+import com.example.DesafioJunior.dtos.BeneficiarioDTO;
+import com.example.DesafioJunior.dtos.BeneficiarioRequest;
 
-import com.example.DesafioJunior.DTOs.DocumentosDTO;
+import com.example.DesafioJunior.dtos.DocumentosDTO;
 
 import com.example.DesafioJunior.services.BeneficiarioService;
 import io.swagger.v3.oas.annotations.Operation;
